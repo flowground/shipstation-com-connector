@@ -1,0 +1,92 @@
+{
+    "type": "object",
+    "properties": {
+        "customerName": {
+            "required": true,
+            "type": "string"
+        },
+        "itemKeyword": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "modifyDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "modifyDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "orderDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "orderDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "orderNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "orderStatus": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "awaiting_payment",
+                "awaiting_shipment",
+                "pending_fulfillment",
+                "shipped",
+                "on_hold",
+                "cancelled"
+            ]
+        },
+        "paymentDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "paymentDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "storeId": {
+            "required": true,
+            "type": "number"
+        },
+        "sortBy": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "OrderDate",
+                "ModifyDate",
+                "CreateDate"
+            ]
+        },
+        "sortDir": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        },
+        "page": {
+            "required": true,
+            "type": "string",
+            "default": "1"
+        },
+        "pageSize": {
+            "required": true,
+            "type": "string",
+            "default": "100"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "orderId": 1234567
+            },
+            "properties": {
+                "orderId": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

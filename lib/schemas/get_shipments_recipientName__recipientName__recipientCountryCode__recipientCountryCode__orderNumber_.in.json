@@ -1,0 +1,91 @@
+{
+    "type": "object",
+    "properties": {
+        "recipientName": {
+            "required": true,
+            "type": "string"
+        },
+        "recipientCountryCode": {
+            "required": true,
+            "type": "string"
+        },
+        "orderNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "orderId": {
+            "required": true,
+            "type": "number"
+        },
+        "carrierCode": {
+            "required": true,
+            "type": "string"
+        },
+        "serviceCode": {
+            "required": true,
+            "type": "string"
+        },
+        "trackingNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "shipDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "shipDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "voidDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "voidDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "storeId": {
+            "required": true,
+            "type": "number"
+        },
+        "includeShipmentItems": {
+            "required": true,
+            "type": "boolean"
+        },
+        "sortBy": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ShipDate",
+                "CreateDate"
+            ]
+        },
+        "sortDir": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        },
+        "page": {
+            "required": true,
+            "type": "number",
+            "default": 1
+        },
+        "pageSize": {
+            "required": true,
+            "type": "number",
+            "default": 100
+        }
+    }
+}

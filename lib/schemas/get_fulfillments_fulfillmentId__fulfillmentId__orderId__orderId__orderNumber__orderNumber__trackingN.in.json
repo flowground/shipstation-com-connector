@@ -1,0 +1,67 @@
+{
+    "type": "object",
+    "properties": {
+        "fulfillmentId": {
+            "required": true,
+            "type": "number"
+        },
+        "orderId": {
+            "required": true,
+            "type": "number"
+        },
+        "orderNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "trackingNumber": {
+            "required": true,
+            "type": "string"
+        },
+        "recipientName": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "createDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "shipDateStart": {
+            "required": true,
+            "type": "string"
+        },
+        "shipDateEnd": {
+            "required": true,
+            "type": "string"
+        },
+        "sortBy": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ShipDate",
+                "CreateDate"
+            ]
+        },
+        "sortDir": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        },
+        "page": {
+            "required": true,
+            "type": "number",
+            "default": 1
+        },
+        "pageSize": {
+            "required": true,
+            "type": "number",
+            "default": 100
+        }
+    }
+}

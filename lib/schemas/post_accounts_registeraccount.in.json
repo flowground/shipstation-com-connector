@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "addr1": "542 Midichlorian Rd.",
+                "addr2": "",
+                "city": "Austin",
+                "companyName": "Droid Repair LLC",
+                "countryCode": "US",
+                "email": "jsmithtest@gmail.com",
+                "firstName": "John",
+                "lastName": "Smith",
+                "password": "testpw1234",
+                "phone": "5124111234",
+                "shippingOriginCountryCode": "US",
+                "state": "TX",
+                "zip": "78703"
+            },
+            "properties": {
+                "addr1": {
+                    "type": "string"
+                },
+                "addr2": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "companyName": {
+                    "type": "string"
+                },
+                "countryCode": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "shippingOriginCountryCode": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

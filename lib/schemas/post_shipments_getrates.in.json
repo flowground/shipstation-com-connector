@@ -1,0 +1,88 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "carrierCode": "fedex",
+                "confirmation": "delivery",
+                "dimensions": {
+                    "height": 6,
+                    "length": 7,
+                    "units": "inches",
+                    "width": 5
+                },
+                "fromPostalCode": "78703",
+                "residential": false,
+                "toCity": "Washington",
+                "toCountry": "US",
+                "toPostalCode": "20500",
+                "toState": "DC",
+                "weight": {
+                    "units": "ounces",
+                    "value": 3
+                }
+            },
+            "properties": {
+                "carrierCode": {
+                    "type": "string"
+                },
+                "confirmation": {
+                    "type": "string"
+                },
+                "dimensions": {
+                    "properties": {
+                        "height": {
+                            "type": "number"
+                        },
+                        "length": {
+                            "type": "number"
+                        },
+                        "units": {
+                            "type": "string"
+                        },
+                        "width": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "fromPostalCode": {
+                    "type": "string"
+                },
+                "packageCode": {
+                    "nullable": true
+                },
+                "residential": {
+                    "type": "boolean"
+                },
+                "serviceCode": {
+                    "nullable": true
+                },
+                "toCity": {
+                    "type": "string"
+                },
+                "toCountry": {
+                    "type": "string"
+                },
+                "toPostalCode": {
+                    "type": "string"
+                },
+                "toState": {
+                    "type": "string"
+                },
+                "weight": {
+                    "properties": {
+                        "units": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

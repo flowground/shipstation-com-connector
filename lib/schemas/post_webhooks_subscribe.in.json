@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "event": "ORDER_NOTIFY",
+                "friendly_name": "My Webhook",
+                "target_url": "http://someexamplewebhookurl.com/neworder"
+            },
+            "properties": {
+                "event": {
+                    "type": "string"
+                },
+                "friendly_name": {
+                    "type": "string"
+                },
+                "store_id": {
+                    "nullable": true
+                },
+                "target_url": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

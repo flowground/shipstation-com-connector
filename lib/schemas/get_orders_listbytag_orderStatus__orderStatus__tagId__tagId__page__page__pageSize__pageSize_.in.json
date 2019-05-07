@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "orderStatus": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "awaiting_payment",
+                "awaiting_shipment",
+                "pending_fulfillment",
+                "shipped",
+                "on_hold",
+                "cancelled"
+            ]
+        },
+        "tagId": {
+            "required": true,
+            "type": "number"
+        },
+        "page": {
+            "required": true,
+            "type": "string",
+            "default": "1"
+        },
+        "pageSize": {
+            "required": true,
+            "type": "string",
+            "default": "100"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "storeId": "12345"
+            },
+            "properties": {
+                "storeId": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

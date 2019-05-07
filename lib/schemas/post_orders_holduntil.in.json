@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "holdUntilDate": "2014-12-01",
+                "orderId": 1072467
+            },
+            "properties": {
+                "holdUntilDate": {
+                    "type": "string"
+                },
+                "orderId": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

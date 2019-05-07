@@ -1,0 +1,111 @@
+{
+    "type": "object",
+    "properties": {
+        "productId": {
+            "required": true,
+            "type": "number"
+        },
+        "requestBody": {
+            "example": {
+                "active": true,
+                "name": "Beautiful",
+                "price": 0,
+                "productId": 123456789,
+                "sku": ""
+            },
+            "properties": {
+                "active": {
+                    "type": "boolean"
+                },
+                "aliases": {
+                    "nullable": true
+                },
+                "customsCountryCode": {
+                    "nullable": true
+                },
+                "customsDescription": {
+                    "nullable": true
+                },
+                "customsTariffNo": {
+                    "nullable": true
+                },
+                "customsValue": {
+                    "nullable": true
+                },
+                "defaultCarrierCode": {
+                    "nullable": true
+                },
+                "defaultConfirmation": {
+                    "nullable": true
+                },
+                "defaultCost": {
+                    "nullable": true
+                },
+                "defaultIntlCarrierCode": {
+                    "nullable": true
+                },
+                "defaultIntlConfirmation": {
+                    "nullable": true
+                },
+                "defaultIntlPackageCode": {
+                    "nullable": true
+                },
+                "defaultIntlServiceCode": {
+                    "nullable": true
+                },
+                "defaultPackageCode": {
+                    "nullable": true
+                },
+                "defaultServiceCode": {
+                    "nullable": true
+                },
+                "fulfillmentSku": {
+                    "nullable": true
+                },
+                "height": {
+                    "nullable": true
+                },
+                "internalNotes": {
+                    "nullable": true
+                },
+                "length": {
+                    "nullable": true
+                },
+                "name": {
+                    "type": "string"
+                },
+                "noCustoms": {
+                    "nullable": true
+                },
+                "price": {
+                    "type": "number"
+                },
+                "productCategory": {
+                    "nullable": true
+                },
+                "productId": {
+                    "type": "number"
+                },
+                "productType": {
+                    "nullable": true
+                },
+                "sku": {
+                    "type": "string"
+                },
+                "tags": {
+                    "nullable": true
+                },
+                "warehouseLocation": {
+                    "nullable": true
+                },
+                "weightOz": {
+                    "nullable": true
+                },
+                "width": {
+                    "nullable": true
+                }
+            },
+            "type": "object"
+        }
+    }
+}

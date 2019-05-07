@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "carrierCode": "usps",
+                "notifyCustomer": true,
+                "notifySalesChannel": true,
+                "orderId": 93348442,
+                "shipDate": "2014-04-01",
+                "trackingNumber": "913492493294329421"
+            },
+            "properties": {
+                "carrierCode": {
+                    "type": "string"
+                },
+                "notifyCustomer": {
+                    "type": "boolean"
+                },
+                "notifySalesChannel": {
+                    "type": "boolean"
+                },
+                "orderId": {
+                    "type": "number"
+                },
+                "shipDate": {
+                    "type": "string"
+                },
+                "trackingNumber": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

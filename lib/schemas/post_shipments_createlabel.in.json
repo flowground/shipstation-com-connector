@@ -1,0 +1,181 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "carrierCode": "fedex",
+                "confirmation": "delivery",
+                "dimensions": {
+                    "height": 6,
+                    "length": 7,
+                    "units": "inches",
+                    "width": 5
+                },
+                "packageCode": "package",
+                "serviceCode": "fedex_ground",
+                "shipDate": "2014-04-03",
+                "shipFrom": {
+                    "city": "Austin",
+                    "company": "ShipStation",
+                    "country": "US",
+                    "name": "Jason Hodges",
+                    "postalCode": "78703",
+                    "residential": false,
+                    "state": "TX",
+                    "street1": "2815 Exposition Blvd",
+                    "street2": "Ste 2353242"
+                },
+                "shipTo": {
+                    "city": "Washington",
+                    "company": "US Govt",
+                    "country": "US",
+                    "name": "The President",
+                    "postalCode": "20500",
+                    "residential": false,
+                    "state": "DC",
+                    "street1": "1600 Pennsylvania Ave",
+                    "street2": "Oval Office"
+                },
+                "testLabel": false,
+                "weight": {
+                    "units": "ounces",
+                    "value": 3
+                }
+            },
+            "properties": {
+                "advancedOptions": {
+                    "nullable": true
+                },
+                "carrierCode": {
+                    "type": "string"
+                },
+                "confirmation": {
+                    "type": "string"
+                },
+                "dimensions": {
+                    "properties": {
+                        "height": {
+                            "type": "number"
+                        },
+                        "length": {
+                            "type": "number"
+                        },
+                        "units": {
+                            "type": "string"
+                        },
+                        "width": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "insuranceOptions": {
+                    "nullable": true
+                },
+                "internationalOptions": {
+                    "nullable": true
+                },
+                "packageCode": {
+                    "type": "string"
+                },
+                "serviceCode": {
+                    "type": "string"
+                },
+                "shipDate": {
+                    "type": "string"
+                },
+                "shipFrom": {
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "phone": {
+                            "nullable": true
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "residential": {
+                            "type": "boolean"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "street1": {
+                            "type": "string"
+                        },
+                        "street2": {
+                            "type": "string"
+                        },
+                        "street3": {
+                            "nullable": true
+                        }
+                    },
+                    "type": "object"
+                },
+                "shipTo": {
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "phone": {
+                            "nullable": true
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "residential": {
+                            "type": "boolean"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "street1": {
+                            "type": "string"
+                        },
+                        "street2": {
+                            "type": "string"
+                        },
+                        "street3": {
+                            "nullable": true
+                        }
+                    },
+                    "type": "object"
+                },
+                "testLabel": {
+                    "type": "boolean"
+                },
+                "weight": {
+                    "properties": {
+                        "units": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

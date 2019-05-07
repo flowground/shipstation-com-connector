@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "carrierCode": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

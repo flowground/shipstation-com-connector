@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "showInactive": {
+            "required": true,
+            "type": "boolean",
+            "default": false
+        },
+        "marketplaceId": {
+            "required": true,
+            "type": "number"
+        }
+    }
+}

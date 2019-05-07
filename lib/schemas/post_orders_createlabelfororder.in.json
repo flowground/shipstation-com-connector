@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "carrierCode": "fedex",
+                "orderId": 93348442,
+                "packageCode": "package",
+                "serviceCode": "fedex_2day",
+                "shipDate": "2014-04-03",
+                "testLabel": false,
+                "weight": {
+                    "units": "pounds",
+                    "value": 2
+                }
+            },
+            "properties": {
+                "advancedOptions": {
+                    "nullable": true
+                },
+                "carrierCode": {
+                    "type": "string"
+                },
+                "confirmation": {
+                    "nullable": true
+                },
+                "dimensions": {
+                    "nullable": true
+                },
+                "insuranceOptions": {
+                    "nullable": true
+                },
+                "internationalOptions": {
+                    "nullable": true
+                },
+                "orderId": {
+                    "type": "number"
+                },
+                "packageCode": {
+                    "type": "string"
+                },
+                "serviceCode": {
+                    "type": "string"
+                },
+                "shipDate": {
+                    "type": "string"
+                },
+                "testLabel": {
+                    "type": "boolean"
+                },
+                "weight": {
+                    "properties": {
+                        "units": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

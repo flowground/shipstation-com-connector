@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "properties": {
+        "storeId": {
+            "required": true,
+            "type": "number"
+        },
+        "refreshDate": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "example": {
+                "refreshDate": "12-08-2014",
+                "storeId": 12345
+            },
+            "properties": {
+                "refreshDate": {
+                    "type": "string"
+                },
+                "storeId": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

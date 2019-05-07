@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "warehouseId": {
+            "required": true,
+            "type": "number"
+        },
+        "requestBody": {}
+    }
+}

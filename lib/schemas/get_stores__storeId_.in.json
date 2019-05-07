@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "storeId": {
+            "required": true,
+            "type": "number"
+        }
+    }
+}

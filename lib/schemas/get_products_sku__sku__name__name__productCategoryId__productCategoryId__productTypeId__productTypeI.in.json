@@ -1,0 +1,65 @@
+{
+    "type": "object",
+    "properties": {
+        "sku": {
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "productCategoryId": {
+            "required": true,
+            "type": "string"
+        },
+        "productTypeId": {
+            "required": true,
+            "type": "string"
+        },
+        "tagId": {
+            "required": true,
+            "type": "string"
+        },
+        "startDate": {
+            "required": true,
+            "type": "string"
+        },
+        "endDate": {
+            "required": true,
+            "type": "string"
+        },
+        "sortBy": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "SKU",
+                "ModifyDate",
+                "CreateDate"
+            ]
+        },
+        "sortDir": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        },
+        "page": {
+            "required": true,
+            "type": "string",
+            "default": "1"
+        },
+        "pageSize": {
+            "required": true,
+            "type": "string",
+            "default": "100"
+        },
+        "showInactive": {
+            "required": true,
+            "type": "string",
+            "default": "false"
+        }
+    }
+}

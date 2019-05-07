@@ -1,0 +1,72 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "isDefault": false,
+                "originAddress": {
+                    "city": "Las Cruces",
+                    "company": "White Sands Co.",
+                    "country": "US",
+                    "name": "NM Warehouse",
+                    "phone": "512-111-2222",
+                    "postalCode": "80012",
+                    "residential": true,
+                    "state": "NM",
+                    "street1": "4704 Arabela Dr."
+                },
+                "warehouseName": "New Ship From Location"
+            },
+            "properties": {
+                "isDefault": {
+                    "type": "boolean"
+                },
+                "originAddress": {
+                    "properties": {
+                        "city": {
+                            "type": "string"
+                        },
+                        "company": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "phone": {
+                            "type": "string"
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "residential": {
+                            "type": "boolean"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "street1": {
+                            "type": "string"
+                        },
+                        "street2": {
+                            "nullable": true
+                        },
+                        "street3": {
+                            "nullable": true
+                        }
+                    },
+                    "type": "object"
+                },
+                "returnAddress": {
+                    "nullable": true
+                },
+                "warehouseName": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

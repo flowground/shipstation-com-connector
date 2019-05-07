@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "example": {
+                "shipmentId": 12345
+            },
+            "properties": {
+                "shipmentId": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

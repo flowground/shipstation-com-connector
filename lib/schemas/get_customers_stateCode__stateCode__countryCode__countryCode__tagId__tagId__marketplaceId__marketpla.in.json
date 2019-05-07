@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "stateCode": {
+            "required": true,
+            "type": "string"
+        },
+        "countryCode": {
+            "required": true,
+            "type": "string"
+        },
+        "marketplaceId": {
+            "required": true,
+            "type": "number"
+        },
+        "tagId": {
+            "required": true,
+            "type": "number"
+        },
+        "sortBy": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "Name",
+                "ModifyDate",
+                "CreateDate"
+            ]
+        },
+        "sortDir": {
+            "required": true,
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        },
+        "page": {
+            "required": true,
+            "type": "number",
+            "default": 1
+        },
+        "pageSize": {
+            "required": true,
+            "type": "number",
+            "default": 100
+        }
+    }
+}
